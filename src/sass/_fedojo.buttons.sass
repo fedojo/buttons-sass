@@ -1,0 +1,41 @@
+.button
+  height: 30px
+  text-transform: uppercase
+  margin:
+    left: 5px
+    bottom: 5px
+    top: 5px
+    right: 5px
+  cursor: pointer
+  @include button-outline(#fff, #fff)
+  @include animateAll(.5s)
+
+  &:hover
+    @include button-outline-hover(#fff, #000)
+    @include animateAll(.5s)
+
+  &:active
+    @include button-outline-hover(#d3d3d3, #fff, #d3d3d3)
+    @include animateAll(.1s)
+
+  &.full-width
+    width: 100%
+
+.button-text-changer
+  height: 30px
+  text-transform: uppercase
+  margin:
+    left: 5px
+    right: 5px
+  cursor: pointer
+  
+  @include button-outline(#fff, #fff)
+  @include animateAll(.5s)
+
+  &:hover
+    @include button-outline-hover(#fff, #000)
+    @include animateAll(.5s)
+
+  &:active
+    @include button-outline-hover(#d3d3d3, #fff, #d3d3d3)
+    @include animateAll(.1s)

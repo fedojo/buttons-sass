@@ -1,0 +1,21 @@
+=button($backgroundColor, $borderRadius, $textColor)
+  // height: 30px
+  background: $backgroundColor
+  border:
+    radius: $borderRadius
+  display: inline-block
+  color: $textColor
+
+=button-outline($borderColor, $textColor, $borderRadius: 3px)
+  // height: 30px
+  background: none
+  border: 2px solid $borderColor
+    radius: $borderRadius
+  display: inline-block
+  color: $textColor
+
+=button-outline-hover($backgroundColor, $textColor, $borderColor: #fff)
+  background: $backgroundColor
+  color: $textColor
+  border:
+    color:  $borderColor
